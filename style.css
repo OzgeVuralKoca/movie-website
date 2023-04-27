@@ -197,3 +197,13 @@ header {
     border-radius: 30px;
     padding: 8px 10px 8px 0px;
 }
+
+.play:hover, 
+.play:hover i {
+    background-color: var(--text-color);
+}
+
+.play:hover {
+    color: var(--bg-color);
+    font-weight: 500;
+}
