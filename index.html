@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Movies Website</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+</head>
+
+<body>
+    <!-- Navbar -->
+    <header>
+        <div class="navbar">
+            <a href="#" class="logo">
+                <i class="fa-solid fa-tape orange"></i> MOVIES
+            </a>
+            <ul class="navbar-menu">
+                <li><a href="#home" class="home-active">Home</a></li>
+                <li><a href="#movies">Movies</a></li>
+                <li><a href="#tvseries">Tv Series</a></li>
+            </ul>
+        </div>
+        <!-- Menu Icon -->
+        <div class="menu-bottom">
+            <a href="#home" class="home-active">
+                <i class="fa-solid fa-house"></i>Home
+            </a>
+            <a href="#movies">
+                <i class="fa-solid fa-film"></i>Movies
+            </a>
+            <a href="#tvseries">
+                <i class="fa-solid fa-tv"></i>Tv Series
+            </a>
+        </div>
+        <!-- Menu -->
+        <a href="#" class="btn">Sign In</a>
+    </header>
+
+    <!-- Home -->
+    <section class="home swiper" id="home">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide container">
+                <img src="images/swiper2.jpg" alt="">
+                <div class="home-text">
+                    <span>Wonder Woman</span>
+                    <h2><i>2017</i></h2>
+                    <h3>Gal Gadot - Chris Pine - Robin Wright</h3>
+                    <div>
+                        <a href="#" class="play">
+                            <i class="fa-solid fa-play"></i> Trailer
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide container">
+                <img src="images/swiper3.jpg" alt="">
+                <div class="home-text">
+                    <span>Fight Club</span>
+                    <h2><i>1999</i></h2>
+                    <h3>Brad Pitt - Edward Norton - Meat Loaf</h3>
+                    <div>
+                        <a href="#" class="play">
+                            <i class="fa-solid fa-play"></i> Trailer
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide container">
+                <img src="images/swiper1.jpg" alt="">
+                <div class="home-text">
+                    <span>Friends</span>
+                    <h2><i>TV Series 1994-2004</i></h2>
+                    <h3>Jennifer AnistonCourteney CoxLisa Kudrow</h3>
+                    <div>
+                        <a href="#" class="play">
+                            <i class="fa-solid fa-play"></i> Trailer
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+    </section>
+
+    <!-- fontawesome -->
+    <script src="https://kit.fontawesome.com/630dbfc933.js" crossorigin="anonymous"></script>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+    <!-- Custom Js -->
+    <script src="main.js"></script>
+
+</body>
+
+</html>
