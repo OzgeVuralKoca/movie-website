@@ -361,22 +361,13 @@ header.shadow {
 }
 
 @media (max-width:417px) {
-    .box {
-       background: none;
-       border-bottom: 1px solid var(--border-color);
-       border-radius: 0;
-       margin-bottom: 5px;
-    }
-    .box .box-img {
-        width: 70%;
-        height: 350px;
-        margin: auto;
-    }
-
-    .box .box-img img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
+    .movies-container {
+        margin-left: 5%;
+        margin-right: 5%;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(140px, auto));
+        gap: 1rem;
+        margin-top: 2rem;
     }
 
     .home-text span {
