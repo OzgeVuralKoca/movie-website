@@ -21,6 +21,17 @@
     --border-color: #8a8a8a8e;
 }
 
+/* Scroll Bar */
+html::-webkit-scrollbar {
+    width: 0.6rem;
+    background-color: var(--bg-color);
+}
+
+html::-webkit-scrollbar-thumb {
+    background: var(--second-color);
+    border-radius: 1rem;
+}
+
 .orange {
     color: var(--second-color);
 }
@@ -35,9 +46,8 @@ section {
 }
 
 .heading {
-    max-width: 968px;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 5%;
+    margin-right: 5%;
     font-size: 1.2rem;
     font-weight: 600;
     text-transform: uppercase;
@@ -55,6 +65,10 @@ header {
     padding: 15px 80px;
     transition: 0.5s;
     z-index: 5;
+}
+
+header.shadow {
+    background: var(--bg-color);
 }
 
 .logo {
@@ -108,7 +122,7 @@ header {
 .menu-bottom {
     position: fixed;
     bottom: 0;
-    padding: 10px 0;
+    padding: 8px 0;
     border-top: 1px solid var(--border-color);
     display: flex;
     justify-content: space-around;
@@ -204,7 +218,7 @@ header {
 }
 
 .home-text h3 {
-    font-weight: 500;
+    font-weight: 700;
     color: var(--second-color);
     margin-bottom: 5%;
 }
@@ -224,17 +238,6 @@ header {
     padding: 8px 10px 8px 0px;
 }
 
-.play2 {
-    padding: 4px 5px 4px 0px;
-    margin-top: 10px;
-    font-size: 0.8rem;
-}
-
-.play2 i {
-    padding: 4px 6px;
-    border: 3px solid var(--border-color);
-}
-
 .play:hover,
 .play:hover i {
     background-color: var(--text-color);
@@ -247,9 +250,8 @@ header {
 
 /* Movies Style */
 .movies-container {
-    max-width: 968px;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 5%;
+    margin-right: 5%;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(180px, auto));
     gap: 1rem;
@@ -282,19 +284,20 @@ header {
 }
 
 .box h3 {
-    font-size: 1rem;
+    font-size: 0.9rem;
     margin-top: 3px;
     font-weight: 600;
     color: var(--second-color);
+    min-height: 60px;
 }
 
 .box span {
-    font-size: 0.8rem;
+    font-size: 0.7rem;
     color: var(--main-color);
 }
 
 .box p {
-    font-size: 0.8rem;
+    font-size: 0.7rem;
 }
 
 .box .kind {
@@ -303,4 +306,92 @@ header {
     padding: 2px 5px;
     width: max-content;
     margin: 3px 0;
+}
+
+.box .play2 {
+    padding: 4px 5px 4px 0px;
+    margin-top: 10px;
+    font-size: 0.8rem;
+    color: var(--text-color);
+}
+
+.box .play2 i {
+    padding: 4px 6px;
+    color: var(--second-color);
+}
+
+.box .play2 i:hover {
+    background: var(--main-color);
+}
+
+@media (max-width:1080px) {
+    .home-text {
+        padding: 0 100px;
+    }
+}
+
+@media (max-width:700px) {
+    header {
+        padding: 15px 5px;
+    }
+
+    .navbar-menu {
+        display: none;
+    }
+
+    .menu-bottom {
+        display: flex;
+        background-color: var(--bg-color);
+    }
+
+    .home-text span {
+        font-size: 2rem;
+    }
+
+    .home-text h2 {
+        font-size: 1.2rem;
+    }
+
+    .home-text h3 {
+        font-weight: 700;
+        font-size: 1rem;
+        color: var(--second-color);
+        margin-bottom: 5%;
+    }
+}
+
+@media (max-width:417px) {
+    .box {
+       background: none;
+       border-bottom: 1px solid var(--border-color);
+       border-radius: 0;
+       margin-bottom: 5px;
+    }
+    .box .box-img {
+        width: 70%;
+        height: 350px;
+        margin: auto;
+    }
+
+    .box .box-img img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .home-text span {
+        font-size: 1.2rem;
+        margin-bottom: 3px;
+    }
+
+    .home-text h2 {
+        font-size: 0.7rem;
+    }
+
+    .home-text h3 {
+        font-weight: 700;
+        font-size: 0.7rem;
+        color: var(--second-color);
+        margin-bottom: 5%;
+    }
 }

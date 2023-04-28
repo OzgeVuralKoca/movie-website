@@ -1,3 +1,9 @@
+let header = document.querySelector('header');
+
+window.addEventListener('scroll', () => {
+  header.classList.toggle('shadow', window.scrollY > 0);
+});
+
 // Swiper Js
 var swiper = new Swiper(".home", {
   spaceBetween: 30,
@@ -33,6 +39,7 @@ getMovies()
 
 function showMovies() {
   let film = ""
+  let tvseries = ""
   let count = movies.length
   for (let i = 0; i < count; i++) {
     let element = `
@@ -50,7 +57,7 @@ function showMovies() {
             Stars: <span>${movies[i].cast}</span>
           </p>
           <div>
-            <a href="${movies[i].trailer}" target="_blank" class="play play2">
+            <a href="${movies[i].trailer}" target="_blank" class="play2">
               <i class="fa-solid fa-play"></i> Trailer
             </a>
           </div>
@@ -60,9 +67,13 @@ function showMovies() {
 
     if (movies[i].kind === "movie") {
       film += element
+    } else if (movies[i].kind === "tvseries") {
+      tvseries += element
     }
   }
 
   let films = document.getElementById("films")
   films.innerHTML += film
+  let series = document.getElementById("series")
+  series.innerHTML += tvseries
 }
