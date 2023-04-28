@@ -40,14 +40,21 @@ function showMovies() {
         <div class="box-img">
           <img src="${movies[i].image}" alt="">
         </div>
-        <h3>${movies[i].title}</h3>
-        <span>${movies[i].description}</span>
-        <div>
-          <p class="kind">${movies[i].genres}</p>
+        <div class="box-info">
+          <h3>${movies[i].title}</h3>
+          <span>${movies[i].description}</span>
+          <div>
+            <p class="kind">${movies[i].genres}</p>
+          </div>
+          <p style="margin-bottom:5px;">
+            Stars: <span>${movies[i].cast}</span>
+          </p>
+          <div>
+            <a href="${movies[i].trailer}" target="_blank" class="play play2">
+              <i class="fa-solid fa-play"></i> Trailer
+            </a>
+          </div>
         </div>
-        <p>
-          Stars: <span>${movies[i].cast}</span>
-        </p>
       </div>
     `
 

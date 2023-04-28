@@ -6,7 +6,8 @@
         "title":"Forrest Gump",
         "genres":"Drama",
         "description":"1994 | 7+ | 142m",
-        "cast":"Tom Hanks, Robin Wright, Gary Sinise"
+        "cast":"Tom Hanks, Robin Wright, Gary Sinise",
+        "trailer":"https://www.youtube.com/watch?v=bLvqoHBptjg&t=1s"
     },
     {
         "image":"./images/TheGreenMile.jpg",

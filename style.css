@@ -224,6 +224,17 @@ header {
     padding: 8px 10px 8px 0px;
 }
 
+.play2 {
+    padding: 4px 5px 4px 0px;
+    margin-top: 10px;
+    font-size: 0.8rem;
+}
+
+.play2 i {
+    padding: 4px 6px;
+    border: 3px solid var(--border-color);
+}
+
 .play:hover,
 .play:hover i {
     background-color: var(--text-color);
@@ -245,6 +256,11 @@ header {
     margin-top: 2rem;
 }
 
+.box {
+    background: #ffffff17;
+    border-radius: 10px;
+}
+
 .box .box-img {
     width: 100%;
     height: 270px;
@@ -256,9 +272,13 @@ header {
     object-fit: cover;
 }
 
-.box .box-img img:hover {
+.box:hover {
     transform: translateY(-10px);
     transition: 0.2s all linear;
+}
+
+.box .box-info {
+    padding: 10px;
 }
 
 .box h3 {
