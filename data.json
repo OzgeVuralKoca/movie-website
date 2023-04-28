@@ -1,0 +1,38 @@
+[
+    {
+        "image":"./images/ForrestGump.jpg",
+        "id": 1,
+        "kind":"movie",
+        "title":"Forrest Gump",
+        "genres":"Drama",
+        "description":"1994 | 7+ | 142m",
+        "cast":"Tom Hanks, Robin Wright, Gary Sinise"
+    },
+    {
+        "image":"./images/TheGreenMile.jpg",
+        "id": 2,
+        "kind":"movie",
+        "title":"Green Mile",
+        "genres":"Drama",
+        "description":"1999 | 18+ | 189m",
+        "cast":"Tom Hanks, Michael Clarke Duncan, David Morse"
+    },
+    {
+        "image":"./images/Titanic.jpg",
+        "id": 3,
+        "kind":"movie",
+        "title":"Titanic",
+        "genres":"Romance",
+        "description":"1997 | 13+ | 194m",
+        "cast":"Leonardo DiCaprio, Kate Winslet, Billy Zane"
+    },
+    {
+        "image":"./images/VForVendetta.jpg",
+        "id": 4,
+        "kind":"movie",
+        "title":"V For Vendetta",
+        "genres":"Action",
+        "description":"2005 | 15+ | 132m",
+        "cast":"Hugo Weaving, Natalie Portman, Rupert Graves"
+    }
+]

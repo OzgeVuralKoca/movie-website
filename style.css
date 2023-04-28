@@ -21,7 +21,7 @@
     --border-color: #8a8a8a8e;
 }
 
-.orange{
+.orange {
     color: var(--second-color);
 }
 
@@ -32,6 +32,16 @@ body {
 
 section {
     padding: 4rem 0 1.5rem;
+}
+
+.heading {
+    max-width: 968px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    border-bottom: 1px solid var(--second-color);
 }
 
 /* Navbar Style */
@@ -52,7 +62,7 @@ header {
     color: var(--second-color);
     font-family: 'Permanent Marker', cursive;
     display: flex;
-    align-items:center;
+    align-items: center;
 }
 
 .menu-icon {
@@ -214,7 +224,7 @@ header {
     padding: 8px 10px 8px 0px;
 }
 
-.play:hover, 
+.play:hover,
 .play:hover i {
     background-color: var(--text-color);
 }
@@ -222,4 +232,55 @@ header {
 .play:hover {
     color: var(--bg-color);
     font-weight: 500;
+}
+
+/* Movies Style */
+.movies-container {
+    max-width: 968px;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, auto));
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.box .box-img {
+    width: 100%;
+    height: 270px;
+}
+
+.box .box-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.box .box-img img:hover {
+    transform: translateY(-10px);
+    transition: 0.2s all linear;
+}
+
+.box h3 {
+    font-size: 1rem;
+    margin-top: 3px;
+    font-weight: 600;
+    color: var(--second-color);
+}
+
+.box span {
+    font-size: 0.8rem;
+    color: var(--main-color);
+}
+
+.box p {
+    font-size: 0.8rem;
+}
+
+.box .kind {
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    padding: 2px 5px;
+    width: max-content;
+    margin: 3px 0;
 }
