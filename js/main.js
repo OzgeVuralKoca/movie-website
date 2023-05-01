@@ -1,3 +1,4 @@
+// Navbar Scroll Background
 let header = document.querySelector('header');
 
 window.addEventListener('scroll', () => {
@@ -66,14 +67,44 @@ function showMovies() {
     `
 
     if (movies[i].kind === "movie") {
-      film += element
-    } else if (movies[i].kind === "tvseries") {
-      tvseries += element
+      if (document.getElementById("films")) {
+        film += element
+      }
+    }
+
+    if (movies[i].kind === "tvseries") {
+      if (document.getElementById("series")) {
+        tvseries += element
+      }
     }
   }
 
   let films = document.getElementById("films")
-  films.innerHTML += film
+  if (films) {
+    films.innerHTML += film
+  }
+
   let series = document.getElementById("series")
-  series.innerHTML += tvseries
+  if (series) {
+    series.innerHTML += tvseries
+  }
 }
+
+// slider-container Arrows
+const arrows = document.querySelectorAll(".chevron");
+const movieLists = document.querySelectorAll(".slider-container")
+
+arrows.forEach((arrow, i) => {
+  arrow.addEventListener("click", function () {
+    const containerWidth = movieLists[i].offsetWidth
+    const contentWidth = movieLists[i].scrollWidth
+    const maxScrollLeft = contentWidth - containerWidth
+    const scrollLeft = movieLists[i].scrollLeft + 196
+    
+    if (scrollLeft >= maxScrollLeft) {
+      movieLists[i].scrollLeft = 0; // Listenin sonuna gelindiğinde başa dön.
+    } else {
+      movieLists[i].scrollLeft += 196; // Normal kaydırma işlemi.
+    }
+  })
+})

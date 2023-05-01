@@ -180,16 +180,6 @@
         "trailer":"https://www.youtube.com/watch?v=cjJLEYMzpjc"
     },
     {
-        "image":"./images/Inception.jpg",
-        "id": 18,
-        "kind":"movie",
-        "title":"Inception",
-        "genres":"Action",
-        "description":"2010 | 13+ | 148m",
-        "cast":"Leonardo DiCaprio, Joseph Gordon-Levitt, Elliot Page",
-        "trailer":"https://www.youtube.com/watch?v=YoHD9XEInc0"
-    },
-    {
         "image":"./images/seinfeld.jpg",
         "id": 19,
         "kind":"tvseries",
@@ -198,5 +188,75 @@
         "description":"1989-1998 | G | 22m",
         "cast":"Jerry Seinfeld, Julia Louis-Dreyfus, Michael Richards",
         "trailer":"https://www.youtube.com/watch?v=hQXKyIG_NS4"
+    },
+    {
+        "image":"./images/StarTrek1966.jpg",
+        "id": 20,
+        "kind":"tvseries",
+        "title":"Star Trek",
+        "genres":"Fantasy",
+        "description":"1966-1969 | 7+ | 50m",
+        "cast":"William Shatner, Leonard Nimoy, DeForest Kelley",
+        "trailer":"https://www.youtube.com/watch?v=nPDb5wX4H7I"
+    },
+    {
+        "image":"./images/StarWarsEpisode1.jpg",
+        "id": 21,
+        "kind":"movie",
+        "title":"Star Wars: Episode I - The Phantom Menace",
+        "genres":"Fantasy",
+        "description":"1999 | 7+ | 136m",
+        "cast":"Ewan McGregor, Liam Neeson, Natalie Portman",
+        "trailer":"https://www.youtube.com/watch?v=bD7bpG-zDJQ"
+    },
+    {
+        "image":"./images/StarWarsEpisode2.jpg",
+        "id": 22,
+        "kind":"movie",
+        "title":"Star Wars: Episode II - Attack of the Clones",
+        "genres":"Fantasy",
+        "description":"2002 | 7+ | 142m",
+        "cast":"Hayden Christensen, Liam Neeson, Natalie Portman",
+        "trailer":"https://www.youtube.com/watch?v=gYbW1F_c9eM"
+    },
+    {
+        "image":"./images/StarWarsEpisode3.jpg",
+        "id": 23,
+        "kind":"movie",
+        "title":"Star Wars: Episode III - Revenge of the Sith",
+        "genres":"Fantasy",
+        "description":"2005 | 7+ | 140m",
+        "cast":"Hayden Christensen, Natalie Portman, Ewan McGregor",
+        "trailer":"https://www.youtube.com/watch?v=5UnjrG_N8hU"
+    },
+    {
+        "image":"./images/got.jpg",
+        "id": 24,
+        "kind":"movie",
+        "title":"Game of Thrones",
+        "genres":"Action",
+        "description":"2011-2019 | 18+ | 57m",
+        "cast":"Emilia Clarke, Peter Dinklage, Kit Harington",
+        "trailer":"https://www.youtube.com/watch?v=KPLWWIOCOOQ"
+    },
+    {
+        "image":"./images/Inception.jpg",
+        "id": 25,
+        "kind":"movie",
+        "title":"Inception",
+        "genres":"Action",
+        "description":"2010 | 13+ | 148m",
+        "cast":"Leonardo DiCaprio, Joseph Gordon-Levitt, Elliot Page",
+        "trailer":"https://www.youtube.com/watch?v=YoHD9XEInc0"
+    },
+    {
+        "image":"./images/friends.jpg",
+        "id": 26,
+        "kind":"movie",
+        "title":"Friends",
+        "genres":"Action",
+        "description":"1994-2004 | 7+ | 22m",
+        "cast":"Jennifer Aniston, Courteney Cox, Lisa Kudrow",
+        "trailer":"https://www.youtube.com/watch?v=IEEbUzffzrk"
     }
 ]
