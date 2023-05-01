@@ -252,9 +252,9 @@
     {
         "image":"./images/friends.jpg",
         "id": 26,
-        "kind":"movie",
+        "kind":"tv series",
         "title":"Friends",
-        "genres":"Action",
+        "genres":"Comedy",
         "description":"1994-2004 | 7+ | 22m",
         "cast":"Jennifer Aniston, Courteney Cox, Lisa Kudrow",
         "trailer":"https://www.youtube.com/watch?v=IEEbUzffzrk"

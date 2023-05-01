@@ -51,7 +51,9 @@ section {
     font-size: 1.2rem;
     font-weight: 600;
     text-transform: uppercase;
-    border-bottom: 1px solid var(--second-color);
+    background: #ffffff17;
+    padding: 3px 0 3px 5px;
+    border-radius: 10px;
 }
 
 /* Navbar Style */
@@ -273,11 +275,18 @@ header.shadow {
     font-size: 60px;
     color: var(--second-color);
     position: absolute;
-    right: 40px;
     top: 350px;
     opacity: .7;
     transition: 0.3s all linear;
     cursor: pointer;
+}
+
+.chevron-left {
+    left: 40px;
+}
+
+.chevron-right {
+    right: 40px;
 }
 
 .chevron:hover {
@@ -352,13 +361,14 @@ header.shadow {
     color: var(--text-color);
 }
 
+.box .play2:hover {
+    background: var(--border-color);
+    border-radius: 15px;
+}
+
 .box .play2 i {
     padding: 4px 6px;
     color: var(--second-color);
-}
-
-.box .play2 i:hover {
-    background: var(--main-color);
 }
 
 @media (max-width:1080px) {

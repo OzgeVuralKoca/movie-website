@@ -42,6 +42,7 @@ function showMovies() {
   let film = ""
   let tvseries = ""
   let fantasy = ""
+  let comedy = ""
   let count = movies.length
   for (let i = 0; i < count; i++) {
     let element = `
@@ -84,6 +85,12 @@ function showMovies() {
         fantasy += element
       }
     }
+
+    if (movies[i].genres === "Comedy") {
+      if (document.getElementById("comedies")) {
+        comedy += element
+      }
+    }
   }
 
   let films = document.getElementById("films")
@@ -100,20 +107,31 @@ function showMovies() {
   if (fantasies) {
     fantasies.innerHTML += fantasy
   }
+
+  let comedies = document.getElementById("comedies")
+  if (comedies) {
+    comedies.innerHTML += comedy
+  }
 }
 
 // slider-container Arrows
-const arrows = document.querySelectorAll(".chevron");
+const leftArrows = document.querySelectorAll(".chevron-left");
+const rightArrows = document.querySelectorAll(".chevron-right");
 const movieLists = document.querySelectorAll(".slider-container")
 
-arrows.forEach((arrow, i) => {
-  arrow.addEventListener("click", function () {
+leftArrows.forEach((leftArrow, i) => {
+  leftArrow.addEventListener("click", function () {
+    movieLists[i].scrollLeft -= 196 // Sola doğru kaydırma işlemi.
+  })
+})
+
+rightArrows.forEach((rightArrow, i) => {
+  rightArrow.addEventListener("click", function () {
     const containerWidth = movieLists[i].offsetWidth
     const contentWidth = movieLists[i].scrollWidth
     const maxScrollLeft = contentWidth - containerWidth + 196
-    const scrollLeft = movieLists[i].scrollLeft + 196
-    
-    if (scrollLeft >= maxScrollLeft) {
+
+    if (movieLists[i].scrollLeft >= maxScrollLeft) {
       movieLists[i].scrollLeft = 0 // Listenin sonuna gelindiğinde başa dön.
     } else {
       movieLists[i].scrollLeft += 196 // Normal kaydırma işlemi.
