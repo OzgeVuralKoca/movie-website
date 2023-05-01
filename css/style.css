@@ -160,6 +160,10 @@ header.shadow {
 
 /* Home Style */
 
+.home {
+    height: 100vh;
+}
+
 .container {
     width: 100%;
     min-height: 640px;
