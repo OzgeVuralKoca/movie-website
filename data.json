@@ -4,7 +4,7 @@
         "id": 1,
         "kind":"movie",
         "title":"Forrest Gump",
-        "genres":"Drama",
+        "genres":"Romance",
         "description":"1994 | 7+ | 142m",
         "cast":"Tom Hanks, Robin Wright, Gary Sinise",
         "trailer":"https://www.youtube.com/watch?v=bLvqoHBptjg&t=1s"
@@ -14,7 +14,7 @@
         "id": 2,
         "kind":"movie",
         "title":"Green Mile",
-        "genres":"Drama",
+        "genres":"Crime",
         "description":"1999 | 18+ | 189m",
         "cast":"Tom Hanks, Michael Clarke Duncan, David Morse",
         "trailer":"https://www.youtube.com/watch?v=Bg7epsq0OIQ"
@@ -42,7 +42,7 @@
     {
         "image":"./images/AnneWithAnE.jpg",
         "id": 5,
-        "kind":"tvseries",
+        "kind":"tv series",
         "title":"Anne with An E",
         "genres":"Family",
         "description":"2017-2019 | 7+ | 60m",
@@ -52,7 +52,7 @@
     {
         "image":"./images/BlackMirror.jpg",
         "id": 6,
-        "kind":"tvseries",
+        "kind":"tv series",
         "title":"Black Mirror",
         "genres":"Mystery",
         "description":"2017-2019 | 7+ | 60m",
@@ -62,7 +62,7 @@
     {
         "image":"./images/dexter.jpg",
         "id": 7,
-        "kind":"tvseries",
+        "kind":"tv series",
         "title":"Dexter",
         "genres":"Crime",
         "description":"2006-2013 | 13+ | 53m",
@@ -72,7 +72,7 @@
     {
         "image":"./images/Dr.HouseM.D..jpg",
         "id": 8,
-        "kind":"tvseries",
+        "kind":"tv series",
         "title":"House M.D.",
         "genres":"Mystery",
         "description":"2004-2012 | 16+ | 44m",
@@ -82,7 +82,7 @@
     {
         "image":"./images/familyguy.jpg",
         "id": 9,
-        "kind":"tvseries",
+        "kind":"tv series",
         "title":"Family Guy",
         "genres":"Comedy",
         "description":"1999- | 15+ | 22m",
@@ -172,7 +172,7 @@
     {
         "image":"./images/himym.jpg",
         "id": 18,
-        "kind":"tvseries",
+        "kind":"tv series",
         "title":"How I Met Your Mother",
         "genres":"Comedy",
         "description":"2005-2014 | 16+ | 22m",
@@ -182,7 +182,7 @@
     {
         "image":"./images/seinfeld.jpg",
         "id": 19,
-        "kind":"tvseries",
+        "kind":"tv series",
         "title":"Seinfeld",
         "genres":"Comedy",
         "description":"1989-1998 | G | 22m",
@@ -192,7 +192,7 @@
     {
         "image":"./images/StarTrek1966.jpg",
         "id": 20,
-        "kind":"tvseries",
+        "kind":"tv series",
         "title":"Star Trek",
         "genres":"Fantasy",
         "description":"1966-1969 | 7+ | 50m",

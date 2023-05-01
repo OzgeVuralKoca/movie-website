@@ -30,7 +30,7 @@ var swiper = new Swiper(".home", {
 let movies = []
 
 const getMovies = async () => {
-  const response = await fetch("data.json");
+  const response = await fetch("data.json")
   const movieList = await response.json()
   movies = movieList
   showMovies()
@@ -41,6 +41,7 @@ getMovies()
 function showMovies() {
   let film = ""
   let tvseries = ""
+  let fantasy = ""
   let count = movies.length
   for (let i = 0; i < count; i++) {
     let element = `
@@ -52,7 +53,7 @@ function showMovies() {
           <h3>${movies[i].title}</h3>
           <span>${movies[i].description}</span>
           <div>
-            <p class="kind">${movies[i].genres}</p>
+            <p class="kind">${movies[i].kind} | ${movies[i].genres}</p>
           </div>
           <p style="margin-bottom:5px;">
             Stars: <span>${movies[i].cast}</span>
@@ -72,9 +73,15 @@ function showMovies() {
       }
     }
 
-    if (movies[i].kind === "tvseries") {
+    if (movies[i].kind === "tv series") {
       if (document.getElementById("series")) {
         tvseries += element
+      }
+    }
+
+    if (movies[i].genres === "Fantasy") {
+      if (document.getElementById("fantasies")) {
+        fantasy += element
       }
     }
   }
@@ -88,6 +95,11 @@ function showMovies() {
   if (series) {
     series.innerHTML += tvseries
   }
+
+  let fantasies = document.getElementById("fantasies")
+  if (fantasies) {
+    fantasies.innerHTML += fantasy
+  }
 }
 
 // slider-container Arrows
@@ -98,13 +110,13 @@ arrows.forEach((arrow, i) => {
   arrow.addEventListener("click", function () {
     const containerWidth = movieLists[i].offsetWidth
     const contentWidth = movieLists[i].scrollWidth
-    const maxScrollLeft = contentWidth - containerWidth
+    const maxScrollLeft = contentWidth - containerWidth + 196
     const scrollLeft = movieLists[i].scrollLeft + 196
     
     if (scrollLeft >= maxScrollLeft) {
-      movieLists[i].scrollLeft = 0; // Listenin sonuna gelindiğinde başa dön.
+      movieLists[i].scrollLeft = 0 // Listenin sonuna gelindiğinde başa dön.
     } else {
-      movieLists[i].scrollLeft += 196; // Normal kaydırma işlemi.
+      movieLists[i].scrollLeft += 196 // Normal kaydırma işlemi.
     }
   })
 })
